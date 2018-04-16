@@ -3,7 +3,7 @@ layout: post
 title: "LeetCode Contest 79"
 description: "LeetCode 周赛 - 79"
 thumb_image: "documentation/sample-image.jpg"
-tags: [LeetCode, Breath-First-Search]
+tags: [LeetCode, Breadth-First-Search]
 ---
 
 #### **Bus Routes**
