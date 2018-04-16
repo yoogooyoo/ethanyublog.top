@@ -1,4 +1,0 @@
----
-slug: LeetCode
-name: LeetCode
----

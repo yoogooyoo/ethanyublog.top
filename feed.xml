@@ -1,20 +1,42 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Ethan Yu's Blog</title>
+    <description></description>
+    <link></link>
+    <atom:link href="/ethanyublog.top/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>LeetCode Contest 80</title>
+        <description>LeetCode 周赛 - 80</description>
+        <pubDate>Sun, 15 Apr 2018 00:00:00 +0800</pubDate>
+        <link>/ethanyublog.top/posts/leetcode-contest-80</link>
+        <guid isPermaLink="true">/ethanyublog.top/posts/leetcode-contest-80</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>LeetCode Contest 79</title>
+        <description>LeetCode 周赛 - 79</description>
+        <pubDate>Sun, 08 Apr 2018 00:00:00 +0800</pubDate>
+        <link>/ethanyublog.top/posts/leetcode-contest-79</link>
+        <guid isPermaLink="true">/ethanyublog.top/posts/leetcode-contest-79</guid>
+      </item>
+    
+      <item>
+        <title>LeetCode Contest 78</title>
+        <description>LeetCode 周赛 - 78</description>
+        <pubDate>Sun, 01 Apr 2018 00:00:00 +0800</pubDate>
+        <link>/ethanyublog.top/posts/leetcode-contest-78</link>
+        <guid isPermaLink="true">/ethanyublog.top/posts/leetcode-contest-78</guid>
+      </item>
+    
+      <item>
+        <title>A summary: how to use bit manipulation to solve problems easily and efficiently</title>
+        <description>LeetCode 周赛 - 78</description>
+        <pubDate>Sun, 26 Jun 2016 00:00:00 +0800</pubDate>
+        <link>/ethanyublog.top/posts/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently</link>
+        <guid isPermaLink="true">/ethanyublog.top/posts/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently</guid>
+      </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ethan Yu's Blog | LeetCode Contest 80</title>
+  <meta name="description" content="LeetCode 周赛 - 80">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="LeetCode Contest 80">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/ethanyublog.top/posts/leetcode-contest-80">
+  <meta property="og:description" content="LeetCode 周赛 - 80">
+  <meta property="og:site_name" content="Ethan Yu's Blog">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="/ethanyublog.top/posts/leetcode-contest-80">
+  <meta name="twitter:title" content="LeetCode Contest 80">
+  <meta name="twitter:description" content="LeetCode 周赛 - 80">
+
+  
+    
+      <meta property="og:image" content="/ethanyublog.top/assets/documentation/sample-image-0a264584b152aa8d86f61525d05ae1131787d0a1029aa1cb7e3e4148b5d34755.jpg">
+      <meta name="twitter:image" content="/ethanyublog.top/assets/documentation/sample-image-0a264584b152aa8d86f61525d05ae1131787d0a1029aa1cb7e3e4148b5d34755.jpg">
+    
+  
+
+  <link href="/ethanyublog.top/feed.xml" type="application/rss+xml" rel="alternate" title="Ethan Yu's Blog Last 10 blog posts" />
+
+  
+
+  
+    <link rel="icon" type="image/x-icon" href="/ethanyublog.top/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
+    <link rel="apple-touch-icon" href="/ethanyublog.top/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+    <link rel="stylesheet" type="text/css" href="/ethanyublog.top/assets/light-d58c19abf06dc3cc3a6c400051a5c3db48584a5b62501c488e46bb346b7acb73.css">
+  
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/ethanyublog.top/" class="header-logo" title="Ethan Yu's Blog">Ethan Yu's Blog</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/ethanyublog.top" title="Homepage">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-homepage">
+  <use href="/ethanyublog.top/assets/homepage-d332ee44269713efddee9cd99d7f7589af3f7344adba09a187fa011647072e7a.svg#icon-homepage" xlink:href="/ethanyublog.top/assets/homepage-d332ee44269713efddee9cd99d7f7589af3f7344adba09a187fa011647072e7a.svg#icon-homepage"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/ethanyublog.top/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/ethanyublog.top/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/ethanyublog.top/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/yoogooyoo" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/ethanyublog.top/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/ethanyublog.top/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/guo-ethan-yu-a0b1a188" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-linkedin">
+  <use href="/ethanyublog.top/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin" xlink:href="/ethanyublog.top/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:ethanyu0319@gmail.com# Add your Email address" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-email">
+  <use href="/ethanyublog.top/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email" xlink:href="/ethanyublog.top/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/ethanyublog.top/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/ethanyublog.top/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/ethanyublog.top/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>LeetCode Contest 80</h1>
+            <p>LeetCode 周赛 - 80</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                April 15, 2018
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  4 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/ethanyublog.top/tag/LeetCode">LeetCode</a>
+                
+                  <a href="/ethanyublog.top/tag/Dynamic-Programming">Dynamic-Programming</a>
+                
+                  <a href="/ethanyublog.top/tag/Breadth-First-Search">Breadth-First-Search</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <h4 id="race-car"><strong>Race Car</strong></h4>
+
+<blockquote>
+  <p>Your car starts at position 0 and speed +1 on an infinite number line.<br />
+(Your car can go into negative positions.)
+Your car drives automatically according to a sequence of instructions A (accelerate) and R (reverse).
+When you get an instruction “A”, your car does the following: position += speed, speed *= 2.
+When you get an instruction “R”, your car does the following: if your speed is positive then speed = -1 , otherwise speed = 1.  (Your position stays the same.)
+For example, after commands “AAR”, your car goes to positions 0-&gt;1-&gt;3-&gt;3, and your speed goes to 1-&gt;2-&gt;4-&gt;-1.
+Now for some target position, say the length of the shortest sequence of instructions to get there.</p>
+</blockquote>
+
+<blockquote>
+  <p>Example 1:
+Input:
+target = 3
+Output: 2
+Explanation:
+The shortest instruction sequence is “AA”.
+Your position goes from 0-&gt;1-&gt;3.</p>
+</blockquote>
+
+<blockquote>
+  <p>Example 2:
+Input:
+target = 6
+Output: 5
+Explanation:
+The shortest instruction sequence is “AAARA”.
+Your position goes from 0-&gt;1-&gt;3-&gt;7-&gt;7-&gt;6.</p>
+</blockquote>
+
+<blockquote>
+  <p>Note:
+    1 &lt;= target &lt;= 10000.</p>
+</blockquote>
+
+<p>题意就是给定一个目标点,起始位置为0,起始初速度为1. 有两种移动方式:</p>
+<ul>
+  <li>‘A’代表按当前方向继续前进,每移动一次,位置增加当前速度值,速度翻倍</li>
+  <li>‘R’代表掉头,位置保持不变,前进方向改变为相反方向,速度恢复为初始速度,即为1
+求解到达目标位置的最短移动路径.</li>
+</ul>
+
+<p>观察可以发现,如果一直’A’向前, 移动距离为 <code class="highlighter-rouge">2^k-1</code>, k 为当前方向移动的次数, ‘R’不改变位置, 所以
+任意的 target 都可以最终表示为 <code class="highlighter-rouge">A^k1 - A^k2 + A^k3 - ....</code> 这样的形式.
+起始位置为0, target &gt;= 1,所以肯定先一直向前行驶,最开始调头毫无意义.
+简单的一个情况是: 如果 target = 2^k-1, 则解为 k, 向前移动 k 次即可.
+由此,我们可以发现, <code class="highlighter-rouge">2^(k-1) &lt;= target &lt; 2^k</code>.
+所以可以很容易发现 <code class="highlighter-rouge">k1 &gt; k3 &gt; k5 &gt; ...</code>, <code class="highlighter-rouge">k2 &gt; k4 &gt; ...</code>.
+在需要选择调头操作时,有两种操作, 第一种我们已经驶过了 target 点,所以需要调头往回开; 第二种尚未驶过 target 点,但是继续前行会驶过 target 点,所以原地调头,往回开一段距离再掉头继续前行.</p>
+
+<p><strong>动态规划</strong> <br />
+运用动态规划来解比较容易想到. 每一次掉头之后, 速度变为1, 可以理解为再次从0出发,初速度为1进行行驶,这样就找到了重复的子问题. 所以我们可以用 dp[pos] 记录下到达 pos 点的最短移动路径长度.
+状态转移方程可以表示为:
+<code class="highlighter-rouge">2^(k-1) &lt;= target &lt; 2^k</code>
+不行驶过 target 点:
+<code class="highlighter-rouge">dp[target] = min(dp[target], dp[target - 2^(k-1) + 2^j] + k-1 + j + 2)</code>( 0 &lt;= j &lt; k-1)
+行驶过 target 点:
+<code class="highlighter-rouge">dp[target] = min(dp[target], dp[2^k-1 - target] + k + 1)</code></p>
+
+<p>代码如下:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">racecar</span><span class="p">(</span><span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">dp</span> <span class="o">=</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">target</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">INT_MAX</span><span class="p">);</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">t</span> <span class="o">&lt;=</span> <span class="n">target</span><span class="p">;</span> <span class="o">++</span><span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">m</span><span class="o">/</span><span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="n">m</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span> <span class="o">++</span><span class="n">k</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span><span class="p">;</span>
+            <span class="k">continue</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">t</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">t</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">j</span><span class="p">)]</span> <span class="o">+</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span> <span class="o">+</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">2</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">((</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">t</span><span class="p">)</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">t</span><span class="p">],</span> <span class="n">dp</span><span class="p">[(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="p">]</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">target</span><span class="p">];</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>分析下时间复杂度, 每一个 T 点耗时 log(T), 所以总耗时 Tlog(T)</p>
+
+<p><strong>BFS</strong> <br />
+按照分析, BFS 同样适用,最快包含 target 的层即为我们的最短路径.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">racecar</span><span class="p">(</span><span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">unordered_set</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">visited</span><span class="p">;</span>
+    <span class="n">vis</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="s">"0,1"</span><span class="p">);</span>
+    <span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">que</span><span class="p">;</span>
+    <span class="n">que</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">});</span>
+    <span class="kt">int</span> <span class="n">depth</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">que</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="k">auto</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">que</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+            <span class="n">que</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+            <span class="o">--</span><span class="n">num</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">first</span> <span class="o">==</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">depth</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">string</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">to_string</span><span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">first</span><span class="p">)</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">second</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span>
+            <span class="n">string</span> <span class="n">s2</span> <span class="o">=</span> <span class="n">to_string</span><span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">first</span><span class="p">)</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">second</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">1</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">==</span> <span class="n">visited</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">cur</span><span class="p">.</span><span class="n">first</span> <span class="o">+</span> <span class="n">cur</span><span class="p">.</span><span class="n">second</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">visited</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">s1</span><span class="p">);</span>
+                <span class="n">que</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">cur</span><span class="p">.</span><span class="n">first</span><span class="o">+</span><span class="n">cur</span><span class="p">.</span><span class="n">second</span><span class="p">,</span> <span class="n">cur</span><span class="p">.</span><span class="n">second</span><span class="o">*</span><span class="mi">2</span><span class="p">});</span>
+            <span class="p">}</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span> <span class="o">==</span> <span class="n">visited</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">cur</span><span class="p">.</span><span class="n">first</span> <span class="o">&gt;=</span> <span class="n">target</span> <span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">visited</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">s2</span><span class="p">);</span>
+                <span class="n">que</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="n">cur</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="n">cur</span><span class="p">.</span><span class="n">second</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="o">-</span><span class="mi">1</span> <span class="o">:</span> <span class="mi">1</span><span class="p">});</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">depth</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=LeetCode+Contest+80%20-%20/ethanyublog.top/posts/leetcode-contest-80" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=/ethanyublog.top/posts/leetcode-contest-80" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+            <a href="https://plus.google.com/share?url=/ethanyublog.top/posts/leetcode-contest-80" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 128 128"><path d="M40.7 55.9v16.1c0 0 15.6 0 22 0C59.2 82.5 53.8 88.2 40.7 88.2c-13.3 0-23.7-10.8-23.7-24.2s10.4-24.2 23.7-24.2c7.1 0 11.6 2.5 15.8 5.9 3.3-3.3 3.1-3.8 11.6-11.9 -7.2-6.6-16.8-10.6-27.4-10.6C18.2 23.3 0 41.5 0 64c0 22.5 18.2 40.7 40.7 40.7 33.6 0 41.8-29.3 39-48.8H40.7zM113.9 56.7V42.6h-10.1v14.1H89.4v10.1h14.5v14.5h10.1V66.8H128V56.7H113.9z"/></svg>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    本站记录个人的技术学习提升之旅
+    Site powered by Jekyll & Github Pages. Chalk theme designed by <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Download Chalk">ielsenramon</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+
+<script type="text/javascript" src="/ethanyublog.top/assets/vendor-3055aff9344d5fd0b8f6b706528e7c7ef0efafabb8c3b423e21d3d36a0178a44.js"></script>
+
+
+  <script type="text/javascript" src="/ethanyublog.top/assets/webfonts-e3010885de8c083c4b2935d463b1649e8796191a66a1b43bb87ef04bbcce420d.js"></script>
+
+
+
+  <script type="text/javascript" src="/ethanyublog.top/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js"></script>
+
+
+<script type="text/javascript" src="/ethanyublog.top/assets/application-cd43a7f9bd8a08997bb19229cd040e7129ede0a1adf77c693b5835c9f8c2a4b1.js"></script>
+
+</body>
+</html>
